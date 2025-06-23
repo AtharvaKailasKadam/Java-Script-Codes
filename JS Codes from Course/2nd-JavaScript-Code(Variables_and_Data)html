@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Datatypes and Variables in JS.
+
+        document.writeln("Variables and Datatypes");
+
+        // String type of Data
+        name = "Atharva Kadam";
+        console.log("Name :");
+        console.log(name);
+        Name = "Om Ganesh Ugale";
+        console.log(Name);
+        Name_1 = "Siddhi Kailas Kadam"
+        console.log(Name_1);
+        
+        // Integer type of Data
+        age = 23;
+        console.log("Age :");
+        console.log(age);
+        Age = 24;
+        console.log(Age);
+
+        // NULL Value
+        x = null;
+
+        // Undefined Variable
+        y = undefined;
+        console.log(y);
+        console.log(x);
+
+        //Boolean type Variable
+        isFollow=true;
+        isNotFollow=true;
+        console.log(isFollow);
+
+        // Important thing to Remember...!
+        // Note :- "=" is an Assignment Operator used to assign Data to the Variable.
+
+        // i.e :- if "a=12"
+        // That means 'a' is a Variable that stores the Data '12'
+
+        // Understanding and Using'let' keyword for Storing Data.
+        console.log("'let' Keyword");
+        let Name1 = "Nishant Talekar";
+        console.log(Name1);
+        let Age1 = "21";
+        console.log(Age1);
+        let Name2 = "Om Salunke";
+        console.log(Name2);
+        let Age2 = "22";
+        console.log(Age2);
+
+        //Understanding and Using 'const' Keyword for Storing Data.
+        console.log("'const' Keyword");
+        const a = 1;
+        console.log(a);
+
+    </script>
+</body>
+</html>
