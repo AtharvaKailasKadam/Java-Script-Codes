@@ -10,15 +10,15 @@ default
 delete
 do
 else
-    export
+export
 extends
 false
 finally
 for
-
 function
 if
-import in
+import
+in
 instanceof
 new
 null
@@ -31,7 +31,7 @@ true
 try
 typeof
 var
-    void
+void
 while
 with
 yield
@@ -39,7 +39,7 @@ enum
 implements
 interface
 let
-    package
+package
 private
 protected
 public
