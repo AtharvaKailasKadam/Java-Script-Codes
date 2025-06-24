@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.writeln("Non-Primitive Datatypes in JavaScript...!");
+        document.writeln("Check the Console Log")
+
+        // Non-Primitive Datatypes in JavaScript.
+        console.log("Creating Object using 'let' Keyword");
+        let Object1 = {
+            Name: "Atharva Kailas Kadam",
+            RollNo: 65,
+            CGPA: 8.0,
+            isPassed: false,
+        };
+        console.log(Object1);
+
+        // Accessing Keys from the Object.
+
+        // using '.' operator.
+        console.log("Accessing the Keys using the '.' Operator");
+        console.log(Object1.Name);
+        console.log(Object1.RollNo);
+
+        // using [" "] operator.
+        console.log("Accessing the keys using the '[]' Operator");
+        console.log(Object1["Name"]);
+        console.log(Object1["CGPA"]);
+
+        // Modifying the Data (key) in the object.
+        console.log("Modifying the Data in the 'let' keyword Object");
+        // Modifying the String Data in the Object.
+        Object1["Name"] = "Atharva Kadam";
+        console.log(Object1.Name);
+
+        // Modifying the Number Data in the Object.
+        Object1["RollNo"] = Object1["RollNo"] + 1;
+        console.log(Object1.RollNo);
+
+        // Modifying the Boolean Type of Data in the Object.
+        Object1["isPassed"] = true;
+        console.log(Object1.isPassed);
+
+        console.log(" ");
+
+        console.log("Creating Object using 'const' Keyword");
+
+        const Object2 = {
+            Name: "Siddhi Kailas Kadam",
+            RollNo: 86,
+            CGPA: 8.0,
+            isPassed: false,
+        };
+        console.log(Object2);
+
+        // Accessing Keys from the Object.
+
+        // Using the '.' Operator.
+        console.log("Accessing the Keys using the '.' Operator");
+        console.log(Object2.Name);
+        console.log(Object2.RollNo);
+
+        // Using the [""] Operator.
+        console.log("Accessing the Keys using the '[]' Operator");
+        console.log(Object2["Name"]);
+        console.log(Object2["CGPA"]);
+
+        // Modifying the Data (Key) in the Object.
+        console.log("Modifying the Data in the 'cont' Keyword Object");
+        // Modifying the String Data in the Object.
+        Object2["Name"] = "Siddhi Kadam";
+        console.log(Object2.Name);
+
+        // Modifying the Number Data in the Object.
+        Object2["RollNo"] = Object2["RollNo"] + 1;
+        console.log(Object2["RollNo"]);
+
+        // Modifying the Boolean Type of Data in the Object.
+        Object2["isPassed"] = true;
+        console.log(Object2.isPassed);
+    </script>
+</body>
+
+</html>
