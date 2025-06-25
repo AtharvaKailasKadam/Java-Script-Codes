@@ -8,6 +8,38 @@
 </head>
 
 <body>
+    <script>
+        // The Output Will be Shown in the Console Log.
+        // Determining the Grade from the Given Number.
+        // Using the 'if-else' Conditional Statements and Comparison Operators to Determine the Marks.
+
+        document.writeln("Determining the Grades of the Students from the Marks Obtained...! Check the Console Log.");
+
+        const a = "A";
+        const b = "B";
+        const c = "C";
+        const d = "D";
+        const f = "F";
+        let Num1 = prompt("Enter the Marks of the Student..?");
+        console.log("The Marks of the Students are: ", Num1);
+
+
+        // Using the 'if-else' Conditional Statements.
+        if (80 < Num1 && Num1 < 100) {
+            console.log("Grade of the Student is : ", a);
+        } else if (70 < Num1 && Num1 < 89) {
+            console.log("Grade of the Student is : ", b);
+        } else if (60 < Num1 && Num1 < 69) {
+            console.log("Grade of the Student is : ", c);
+        } else if (50 < Num1 && Num1 < 59) {
+            console.log("Grade of the Student is : ", d);
+        } else if (0 <= Num1 && Num1 <= 49) {
+            console.log("Grade of the Student is : ", f);
+            console.log("The Student is Failed...!");
+        } else {
+            console.log("Enter Valid Marks in Numbers.");
+        }
+    </script>
 
 </body>
 
