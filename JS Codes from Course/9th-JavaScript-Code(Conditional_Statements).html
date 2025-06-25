@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.writeln("Conditional Statements in JavaScript....! Check the Console Log.")
+            // Using the 'if' Conditional Statement.
+
+        console.log("Use of if Statement.");
+
+        let Name = "Atharva";
+        let Age = 20;
+        console.log("Name : ", Name);
+        console.log("Age : ", Age);
+
+        // Using Number value in 'if' Statement.
+        if (Age > 18) {
+            console.log("You are Not Eligible to Vote...!");
+        }
+
+        //Using String value in if-else Statement.
+        console.log("");
+        console.log("Use of if-else Statement.");
+
+        let mode = "light";
+        let color = undefined;
+
+        // The '===' Strictly Checks the Value and the Datatype of the Variable being Used.
+        if (mode === "dark") {
+            color = "black";
+        } else if (mode === "light") {
+            color = "white";
+        } else {
+            console.log("Done...!");
+        }
+        console.log("Color = ", color);
+        console.log("");
+
+        // Using the 'if-else' Conditional Statements to Check the Even or Odd Number.
+
+        console.log("Determining whether the Number is Even or Odd.")
+        let x = 10;
+        let y = 101;
+        console.log(" The Value of 'x' is = ", x);
+        console.log(" The Value of 'y' is = ", y);
+
+        if (x % 2 === 0) {
+            console.log(x, " is an Even Number");
+        } else {
+            console.log(x, " is an Odd Number");
+        }
+
+        if (y % 2 === 0) {
+            console.log(y, " is an Even Number");
+        } else {
+            console.log(y, " is an Odd Number");
+        }
+    </script>
+</body>
+
+</html>
