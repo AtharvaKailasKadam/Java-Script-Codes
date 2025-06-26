@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Using the 'for' Loop in JavaScript to Print the Sum of 'n' Numbers.
+        // The Sum will be Printed in the Console Log.
+
+        document.write("This Program Demonstrates the Use of  Loops....! Check the Console Log.")
+
+        console.log("Using the 'for' Loop");
+        let sum1 = 0;
+        let n = prompt("Enter the Number to Find the Sum of First 'n' Numbers :");
+        console.log("The Number that is Entered is : ", n);
+
+        // Using 'for' Loop.
+        for (let i = 1; i <= n; i++) {
+            sum1 = sum1 + i;
+        }
+        console.log("The Sum of First ", n, " Numbers is ", sum1);
+
+        console.log("The Loop Has Ended....!");
+
+        // Note: Never to use Infinite Loops in the Program.
+
+        //--------------------------------------------------------------------------------------------------------------------------
+
+        // Using the 'while' Loop in JavaScript to Print the Table of the Entered Number.
+
+        console.log("");
+        console.log("Using the 'while' Loop ");
+        let t = prompt("Enter the Number of Which You want to See the Multiplication Table : ")
+        console.log("The Number Entered to Print the Table is : ", t);
+        console.log("The Table of ", t, "is as Follows : ");
+
+        // Using 'while' Loop.
+        let i = 1;
+        while (i <= 10) {
+            console.log(t, " * ", i, " = ", t * i);
+            i++;
+        }
+
+        //--------------------------------------------------------------------------------------------------------------------------
+
+        // Using the 'do-while' Loop in JavaScript Factorial of 'n' Numbers.
+
+        console.log("");
+        console.log("using the 'do-while' Loop ");
+
+        let fact = 1;
+        let m = prompt("Enter the Number to Print the Factorial of : ");
+        let m1 = m;
+        console.log("The Number Entered to Print the Factorial of is : ", m1);
+
+        // Using 'do-while' Loop.
+        do {
+            fact = fact * m;
+            m--;
+        } while (m >= 1);
+        console.log("The Factorial of ", m1, " is : ", fact);
+    </script>
+</body>
+
+</html>

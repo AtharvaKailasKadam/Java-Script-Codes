@@ -9,38 +9,32 @@
 
 <body>
     <script>
-        // The Output Will be Shown in the Console Log.
-        // Determining the Grade from the Given Number.
-        // Using the 'if-else' Conditional Statements and Comparison Operators to Determine the Marks.
+        document.writeln("This Program Demonstrates the Number-Guessing Game : ");
 
-        document.writeln("Determining the Grades of the Students from the Marks Obtained...! Check the Console Log.");
+        // The Number-Guessing Game.
+        // The Game will be played only between the Numbers between '0 to 25';
 
-        const a = "A";
-        const b = "B";
-        const c = "C";
-        const d = "D";
-        const f = "F";
-        let Num1 = prompt("Enter the Marks of the Student..?");
-        console.log("The Marks of the Students are: ", Num1);
-
-
-        // Using the 'if-else' Conditional Statements.
-        if (80 < Num1 && Num1 < 100) {
-            console.log("Grade of the Student is : ", a);
-        } else if (70 < Num1 && Num1 < 89) {
-            console.log("Grade of the Student is : ", b);
-        } else if (60 < Num1 && Num1 < 69) {
-            console.log("Grade of the Student is : ", c);
-        } else if (50 < Num1 && Num1 < 59) {
-            console.log("Grade of the Student is : ", d);
-        } else if (0 <= Num1 && Num1 <= 49) {
-            console.log("Grade of the Student is : ", f);
-            console.log("The Student is Failed...!");
-        } else {
-            console.log("Enter Valid Marks in Numbers.");
+        // lets store the Correct Value to be Guessed.
+        let CorrectGuessedNumber = prompt("Server-Side: Enter the Number to be Guessed by the Player between '0 to 25'");
+        if (0 > CorrectGuessedNumber || CorrectGuessedNumber > 25) {
+            CorrectGuessedNumber = prompt("Server-Side: Invalid Entry...! Enter the Number to be Guessed Between '0 to 25' ");
         }
-    </script>
+        let UserNumber = prompt("Player-Side: Enter Your Number to be Guessed....!");
 
+        let i = 1;
+        do {
+            console.log("Attempt No. = ", i);
+            console.log("ERROR...!");
+            console.log("You Have Entered the Wrong Number...! i.e: ", UserNumber);
+            UserNumber = prompt("Player-Side: You have Guessed the Wrong Number...! Please Enter Again");
+            console.log("");
+            i++;
+        } while (UserNumber !== CorrectGuessedNumber)
+
+        console.log("Attempt No. = ", i);
+        console.log("Hurray....!");
+        console.log("You Have Entered The Correct Number...! i.e. ", CorrectGuessedNumber);
+    </script>
 </body>
 
 </html>

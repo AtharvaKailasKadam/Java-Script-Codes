@@ -9,18 +9,30 @@
 
 <body>
     <script>
-        document.write("\n To Determine Whether the Number is a Multiple of 5 or Not. ");
+        document.writeln("Printing all the Even Numbers between '0 to 100'  ");
 
-        // Determining the whether the Number is Multiple of 5 or Not..?
-        // Displaying the Message on the Browser Screen/Window.
+        // Determining the Even Numbers Between '0 to 100' in the Program.
+        // Displaying the Output in the Console Log.
 
-        // Taking the Input From the User
-        let Num1 = prompt("Enter the Number to be Checked. ");
-        document.writeln("The Entered Number is : ", Num1);
-        if (Num1 % 5 === 0) {
-            document.writeln(" The Number is a Multiple of 5");
+        let num = prompt("Enter the Number between '0 to 100' to Print all the Even Numbers Before that Number :  ");
+        let sum1 = 0;
+
+        if ((num < 0) || (100 < num)) {
+            console.log("ERROR:....!, Please Enter the Number Between 0 and 100 : ");
         } else {
-            document.writeln(" The Number is Not a Multiple of 5");
+            for (let i = 1; i <= num; i++) {
+                if (i % 2 == 0) {
+                    console.log("The Even Number is : ", i);
+                }
+            }
+
+            for (let i = 1; i <= num; i++) {
+                if (i % 2 == 0) {
+                    sum1 = sum1 + 1;
+                }
+            }
+            console.log("The Total Numbwe of Even Numbers between 0 and", num, " is ", sum1);
+
         }
     </script>
 </body>

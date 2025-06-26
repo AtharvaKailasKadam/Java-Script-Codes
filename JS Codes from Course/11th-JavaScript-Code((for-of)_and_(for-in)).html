@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Using the 'for-of' and 'for-in' Loops in JavaScript.
+
+        document.writeln("This Program Demonstrates the Use of 'for-of' and 'for-in' Loops...!");
+        document.writeln("Check the Console Log.");
+
+        console.log("Using the 'for-of' Loop.")
+
+        let Str1 = prompt("Enter the String to Perform 'for-of' Loop Operation : ");
+        let Num1 = 0;
+        console.log("The Entered String of Characters is : ", Str1);
+
+        for (let i of Str1) {
+            console.log("The Character is :", i);
+        }
+
+        for (let i of Str1) {
+            Num1 = Num1 + 1;
+        }
+        console.log("The Total Number of Characters in the String is : ", Num1);
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+        console.log("");
+        console.log("Using the 'for-in' Loop.");
+        let Object1 = {
+            Name: "Atharva",
+            RollNo: 65,
+            Age: 23,
+            Address: "Pune",
+        }
+        console.log(Object1.Name);
+
+        for (let key in Object1) {
+            // For Printing the Values of the Object You should use the Following Syntax.
+            // Object_name[key_to_print]
+            // I.e. 'Object1[key]'
+            console.log("Key = ", key, "Value = ", Object1[key]);
+        }
+    </script>
+</body>
+
+</html>
