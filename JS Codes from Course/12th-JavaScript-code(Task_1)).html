@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Taking Input from the User by Entering FullName of the User i.e.'Atharvakailaskadam'.
+        // Generating the Username for them based on the Input.
+        // The Format of the Username will be '@'followed by their full name and ending with the fullname length.
+
+        document.writeln("This Program Demonstrates the Operation Performed on the Strings...! Check the Console Log.");
+
+        // Taking Input from the User by Entering FullName of the User i.e.'Atharvakailaskadam'.
+        let FullName = prompt("Enter the Full Name of the User in the Format as 'aaravkadam'.");
+        let LowerCase = FullName.toLowerCase();
+
+        // Finding the Length of the String using 'str.length()' Function.
+        let Length = FullName.length;
+
+        let Output = `The Username for Your Name = '${FullName}' is : @${LowerCase}${Length}`;
+        console.log(Output);
+    </script>
+</body>
+
+</html>

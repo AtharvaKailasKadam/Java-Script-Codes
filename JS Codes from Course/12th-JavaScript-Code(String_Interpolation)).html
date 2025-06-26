@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Understanding the Concept of String Interpolation.
+
+        let Object1 = {
+            Name: "Atharva",
+            RollNo: 65,
+        }
+
+        // Accessing Object Contents using Normal Statement.
+        document.writeln("This Program Demonstrates the Use of String Interpolation....! \nCheck the Console Log");
+        console.log("Normal Statements to Access Object Variable and Key ");
+        console.log("The Name is :", Object1.Name, "\nRoll Number is :", Object1.RollNo);
+        console.log("");
+
+        // Accessing Object Contents using String Interpolation Statements.
+        console.log("String Interpolation statement to Access Object's Variable and Key ");
+        let output = `The Name is : ${Object1.Name} \nRoll Number is : ${Object1.RollNo}`;
+        console.log(output);
+    </script>
+</body>
+
+</html>
