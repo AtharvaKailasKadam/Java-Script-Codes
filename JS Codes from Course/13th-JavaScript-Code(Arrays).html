@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Using the Concepts of Array in JavaScript.
+
+        let array1 = ['Atharva', 'Om', 'Aniket', 'Nishant', 'Abdul'];
+        console.log(array1);
+
+        // Arrays are Similar to Object i.e. the typeof Array is Object.
+        // But these Objects are without the 'key' associated with them.
+        console.log("Type of Array is : ", typeof(array1));
+        console.log("The First Element of Array is : ", array1[0]);
+
+        console.log("");
+        console.log("Changing the 3rd Element Value from the Array : ");
+        array1[2] = "Samar";
+        console.log(array1);
+
+        console.log("");
+        console.log("Printing the Values from the Array using the 'for-loop'.");
+        for (let i = 0; i < array1.length; i++) {
+            let Output = `The Value of Array Element is : ${array1[i]}`;
+            console.log(Output);
+        }
+
+        console.log("");
+        console.log("Printing the Values from the Array using Different 'for-loop',");
+        for (let name of array1) {
+            console.log("The Value of Array Element is :", name);
+        }
+    </script>
+</body>
+
+</html>
