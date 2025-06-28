@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // For a Given Array with Marks of Students -> [85,97,44,37,76,60].
+        // Find the Average Marks of Students.
+
+        document.writeln("This Program Demonstrates the Operation of Finding the Average of the Elements....! Check the Console Log");
+
+        let ArrayElemnts = [85, 97, 44, 37, 76, 60];
+        console.log("The Array Elements are : ", ArrayElemnts);
+
+        let sum = 0;
+        for (let Arr of ArrayElemnts) {
+            sum = sum + Arr;
+        }
+        console.log("The Sum of all the Marks is :", sum);
+
+        console.log("The Avarage of the Marks are as Follows : ", sum / 6);
+    </script>
+</body>
+
+</html>

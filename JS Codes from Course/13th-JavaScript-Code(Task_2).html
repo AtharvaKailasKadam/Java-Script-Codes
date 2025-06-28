@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // For a given array with prices of 5 items -> [250, 645, 300, 900, 50].
+        // All items have an offer of 10% off on them.
+        // Change the array to Store final price after applying offer.
+
+        document.writeln("This Program Demonstrates the Use of Array and apply Certain Operations on it...! Check the Console Log. ");
+
+        let ItemPrice = [250, 645, 300, 900, 50];
+        console.log("The Prices of the Items in the Array is :", ItemPrice);
+
+        let discount = 0;
+        let DiscountedItemPrice = [];
+
+        for (let price = 0; price < ItemPrice.length; price++) {
+            discount = ItemPrice[price] * (10 / 100);
+            ItemPrice[price] = ItemPrice[price] - discount;
+            DiscountedItemPrice[price] = ItemPrice[price];
+        }
+        console.log("The Price of Items after the 10% Discount is : ", DiscountedItemPrice);
+    </script>
+</body>
+
+</html>
