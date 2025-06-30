@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Create a Function using 'function' keyword that takes a String Value as an Argument.
+        // Return the Number of Vowels in the String.
+
+        document.write("The Following Program Demonstrates the Task for Using the Function...! Check the Console Log.");
+
+        let StringValue = "AtharvaKailasKadam";
+        console.log("The Entered String Value is : ", StringValue);
+
+        function CheckVowel()
+        {
+            let sum = 0;
+            for(let char of StringValue)
+            {
+                if(char === 'a' || char === 'i' || char === 'e' || char ==='o' || char === 'u' || char === 'A' || char === 'E' || char === 'I' || char === 'O' || char === 'U')
+                {
+                    sum = sum + 1;
+                }
+            }
+            console.log("The Number of Vowels in the String is : ", sum);
+        }
+        console.log(CheckVowel(StringValue));
+
+    </script>
+</body>
+</html>
