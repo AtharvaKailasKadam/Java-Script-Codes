@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("The Program Demonstrates the use of the arr.forEach() Method of the Array...! Check the Console Log.")
+        // Using arr.forEach() method for Accessing Each value int the Array.
+        let a = [1,2,3,4,5,6,7,8,9];
+
+        // Using the arr.forEach() method
+        console.log("Using the Normal Function.")
+        a.forEach(function Mul(val,idx,a){
+            let result = val * 2;
+            console.log("The Result after Multiplying the Value from the Array with 2, we get : ",result);
+            console.log("Index : ", idx);
+            console.log("Array : ",a);
+        });
+
+        // Using the arr.forEach() method using Arrow Function.
+        console.log("");
+        console.log("Using the Arrow Function.");
+        a.forEach((val,idx,a) => {
+            let result = val * 4;
+            console.log("The Result after Multiplying the Value from the Array with 4, we get : ",result);
+            console.log("Index : ", idx);
+            console.log("Array : ",a);
+        });
+    </script>
+
+</body>
+</html>

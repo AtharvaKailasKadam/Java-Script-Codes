@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.writeln("The Program Demonstrates the Use of arr.map() Method in JS....! Check the Console Log.")
+
+        console.log("Using the 'arr.map()' Method ");
+
+        let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        arr1.forEach((val) => {
+            console.log(val);
+        });
+
+        let MulV = 1;
+        console.log("\nThe Multiplication Table of 25 is : ");
+        let arr2 = arr1.map(function mul(val){
+            MulV = val * 25
+            let output = `25 * ${val} = ${MulV}`;
+            console.log(output);
+        });
+    </script>
+</body>
+</html>

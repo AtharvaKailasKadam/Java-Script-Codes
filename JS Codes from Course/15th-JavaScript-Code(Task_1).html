@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // For a Given array of Numbers, Print the Square of each Value using the forEach() Loop in JS.
+        // All the Values in the Array are Hardcore Values.
+
+        document.write("The Following Program Demonstrates the Use of forEach() Loop in the Program...! Check the Console Log.");
+
+        let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        console.log("The Values in the Array are : ");
+        arr1.forEach((val) => {
+            console.log(val);
+        });
+
+        console.log("\nThe Squares of the above Values are : ");
+
+        let Sq = 1;
+        arr1.forEach(function Square(val){
+            Sq = val * val;
+            let output = `The Square of ${val} is : ${Sq}`;
+            console.log(output);
+        });
+
+        console.log("Code Executed Successfully...!");
+    </script>
+</body>
+</html>
