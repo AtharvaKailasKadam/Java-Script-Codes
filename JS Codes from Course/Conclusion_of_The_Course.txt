@@ -1,0 +1,9 @@
+* Gained a solid understanding of JavaScript fundamentals such as variables, data types, operators, and control structures.
+
+* Learned how to write and use functions effectively to organize and reuse code.
+
+* Explored concepts like arrays, objects, loops, and conditional statements for handling logic and data.
+
+* Developed problem-solving skills using JavaScript to create logical and efficient solutions.
+
+* Understood the basics of error handling and debugging in JavaScript programs.
