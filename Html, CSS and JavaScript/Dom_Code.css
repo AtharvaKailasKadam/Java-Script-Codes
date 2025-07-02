@@ -1,8 +1,20 @@
-h1 {
+#heading {
     color:blue;
     font-size: 24px;
     text-align: center;
     background-color: yellow;
+}
+.para {
+    color: purple;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+#subheading {
+    color: rgb(68, 15, 241);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
 }
 body {
     background-color: pink;
@@ -16,6 +28,7 @@ button{
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    align-items: center;;
 }
 p{
     font-size: 18px;
