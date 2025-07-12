@@ -43,6 +43,10 @@ function getData(dataid, getNextData)
         }
     },5000);
 }
+
+// This is the Example of CallBack Hell.
+// This is not a good practice, as it makes the code hard to read and maintain.
+console.log("\nCallBack Hell");
 getData(1, () => {
     getData(2, () => {
         getData(3, () => {
@@ -50,6 +54,12 @@ getData(1, () => {
         })
     });
 })
-console.log("I was Out TODAY...!");
 // I was Out Today too.
 
+setTimeout(() => {
+    console.log("Hii....I'm Back..!");
+}, 2000);
+
+
+// Inorder to avoid CallBack Hell, we can use Promises.
+console.log("\nPromises Example");
