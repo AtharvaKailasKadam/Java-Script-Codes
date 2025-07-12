@@ -53,5 +53,55 @@ promisedata.then((res) => {
 // This is the Catch Block.
 // It is used to handle the error if the promise is rejected.
 promisedata.catch((err) => {
-    console.log("Promise Rejected...!");
+    console.log("Promise Rejected...!\n");
+});
+
+console.log("Promise Chaining");
+// This is the Promise Chaining.
+
+function asyncFunction1() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Async Function Executed Data-1.");
+            resolve("Data from Async Function(Success)..!");
+        }, 4000);
+    })
+}
+
+function asyncFunction2() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Async Function Executed...Data-2.");
+            resolve("Data from Async Function(Success)..!");
+        }, 4000);
+    })
+}
+
+console.log("Starting Async Function");
+let p1 = asyncFunction1();
+p1.then((res) => {
+    console.log("Async Function 1 Resolved: ", res);
+    let p2 = asyncFunction2();
+    p2.then((res) => {
+        console.log("Async Function 2 Resolved: ", res);
+    });
+});
+
+// This Chaining is Very Important.
+// It is used to handle the success of the promise in a sequential manner.
+// Another method for Promise Chaining is to use the `then` method directly on the promise returned by the function.
+
+// asyncFunction1().then((res) => {
+//     console.log("Async Function 1 Resolved: ", res);
+//     asyncFunction2().then((res) => {
+//         console.log("Async Function 2 Resolved: ", res);
+//     });
+// });
+
+getData(1)
+.then((res) => {
+    return getData(2);
+})
+.then((res) => {
+    console.log("Data Fetched Successfully: ", res);
 });
