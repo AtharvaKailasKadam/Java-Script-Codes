@@ -46,3 +46,5 @@ function getData(dataid)
 })(); // This is an IIFE (Immediately Invoked Function Expression) that calls the getData() function three times, each time waiting for the previous one to complete.
 
 // Call the Function of fetchdata() in the Console Log to see the Results.
+
+// I was Out.
