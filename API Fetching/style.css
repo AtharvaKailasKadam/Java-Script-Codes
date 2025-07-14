@@ -1,0 +1,98 @@
+/* Animated gradient background with smooth color transition */
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+  background-size: 800% 800%;
+  animation: gradientShift 15s ease infinite;
+  display: flex;
+  flex-direction: column; /* stack children vertically */
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  gap: 1.5rem; /* space between paragraph and button */
+}
+
+/* Paragraph with subtle fade-in and slide-up effect */
+p {
+  animation: fadeSlideUp 2s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Cat emoji floating animation with color pulse */
+.cat-emoji {
+  display: inline-block;
+  animation: floatCat 3s ease-in-out infinite, colorPulse 4s ease-in-out infinite;
+  font-size: 2.5rem;
+  margin-left: 0.5rem;
+}
+
+@keyframes floatCat {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(15deg);
+  }
+}
+
+@keyframes colorPulse {
+  0%, 100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(45deg);
+  }
+}
+
+/* Animated button with scale and shadow effect */
+button {
+  background: #4ade80;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 15px #4ade80;
+  transition: box-shadow 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+button:hover {
+  box-shadow: 0 0 30px #22c55e;
+  transform: scale(1.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 15px #4ade80;
+  }
+  50% {
+    box-shadow: 0 0 30px #22c55e;
+  }
+}
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
